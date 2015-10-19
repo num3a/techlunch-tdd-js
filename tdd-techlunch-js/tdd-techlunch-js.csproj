@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB5287BB-02CE-4ECA-951E-8DF01C7394CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdd_techlunch_js</RootNamespace>
+    <AssemblyName>tdd-techlunch-js</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\tdd-techlunch-js.exe.config" />
+    <None Include="bin\Debug\tdd-techlunch-js.vshost.exe.config" />
+    <None Include="node_modules\angular-mocks\bower.json" />
+    <None Include="node_modules\angular-mocks\package.json" />
+    <None Include="node_modules\angular-mocks\README.md" />
+    <None Include="node_modules\angular-route\angular-route.min.js.map" />
+    <None Include="node_modules\angular-route\bower.json" />
+    <None Include="node_modules\angular-route\package.json" />
+    <None Include="node_modules\angular-route\README.md" />
+    <None Include="node_modules\angular\angular.min.js.gzip" />
+    <None Include="node_modules\angular\angular.min.js.map" />
+    <None Include="node_modules\angular\bower.json" />
+    <None Include="node_modules\angular\package.json" />
+    <None Include="node_modules\angular\README.md" />
+    <None Include="node_modules\todomvc-app-css\package.json" />
+    <None Include="node_modules\todomvc-app-css\readme.md" />
+    <None Include="node_modules\todomvc-common\package.json" />
+    <None Include="node_modules\todomvc-common\readme.md" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <None Include="test\package.json" />
+    <None Include="test\readme.md" />
+    <None Include="wallaby.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".idea\runConfigurations\wallaby.xml" />
+    <Content Include="bin\Debug\tdd-techlunch-js.vshost.exe" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\controllers\todoCtrl.js" />
+    <Content Include="js\directives\todoEscape.js" />
+    <Content Include="js\directives\todoFocus.js" />
+    <Content Include="js\services\todoStorage.js" />
+    <Content Include="node_modules\angular-mocks\angular-mocks.js" />
+    <Content Include="node_modules\angular-mocks\ngAnimateMock.js" />
+    <Content Include="node_modules\angular-mocks\ngMock.js" />
+    <Content Include="node_modules\angular-mocks\ngMockE2E.js" />
+    <Content Include="node_modules\angular-route\angular-route.js" />
+    <Content Include="node_modules\angular-route\angular-route.min.js" />
+    <Content Include="node_modules\angular-route\index.js" />
+    <Content Include="node_modules\angular\angular-csp.css" />
+    <Content Include="node_modules\angular\angular.js" />
+    <Content Include="node_modules\angular\angular.min.js" />
+    <Content Include="node_modules\angular\index.js" />
+    <Content Include="node_modules\todomvc-app-css\index.css" />
+    <Content Include="node_modules\todomvc-common\base.css" />
+    <Content Include="node_modules\todomvc-common\base.js" />
+    <Content Include="obj\Debug\tdd-techlunch-js.csproj.FileListAbsolute.txt" />
+    <Content Include="test\config\karma.conf.js" />
+    <Content Include="test\unit\directivesSpec.js" />
+    <Content Include="test\unit\todoCtrlSpec.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
