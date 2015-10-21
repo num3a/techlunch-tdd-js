@@ -9,6 +9,9 @@ angular.module('todomvc')
 	.controller('DashboardCtrl', function TodoCtrl($scope) {
 	    'use strict';
 
-	   
-	  
-	});
+	    $scope.lightOn = true;
+
+        $scope.toogleLights = function() {
+            $scope.lightOn = !$scope.lightOn;
+        };
+    });

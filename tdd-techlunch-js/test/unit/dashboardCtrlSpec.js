@@ -17,15 +17,16 @@
             });
         }));
 
-    
-        describe('the filter', function () {
-            it('should default to ""', function () {
 
+        it('ToogleLights should change light mode', function () {
 
-            });
-
-         
+            expect(scope.lightOn).toBeTruthy();
+            scope.toogleLights();
+            expect(scope.lightOn).toBeFalsy();
         });
+
+
+
 
     });
 }());
