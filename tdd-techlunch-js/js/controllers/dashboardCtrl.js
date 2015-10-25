@@ -5,13 +5,22 @@
  * - retrieves and persists the model via the todoStorage service
  * - exposes the model to the template and provides event handlers
  */
-angular.module('todomvc')
-	.controller('DashboardCtrl', function TodoCtrl($scope) {
+angular.module('demeter')
+	.controller('DashboardCtrl', function TodoCtrl($scope, demeterService) {
 	    'use strict';
 
 	    $scope.lightOn = true;
+	    $scope.remainingWaterInML = 500;
 
         $scope.toogleLights = function() {
             $scope.lightOn = !$scope.lightOn;
         };
+
+        $scope.triggerWatering = function() {
+            if ($scope.remainingWaterInML > 50) {
+                $scope.remainingWaterInML -= 50;
+            }
+            // call demeter service
+        }
+        
     });

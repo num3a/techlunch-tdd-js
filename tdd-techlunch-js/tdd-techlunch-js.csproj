@@ -69,6 +69,7 @@
     <Content Include="js\controllers\todoCtrl.js" />
     <Content Include="js\directives\todoEscape.js" />
     <Content Include="js\directives\todoFocus.js" />
+    <Content Include="js\services\demeterService.js" />
     <Content Include="js\services\todoStorage.js" />
     <Content Include="node_modules\angular-mocks\angular-mocks.js" />
     <Content Include="node_modules\angular-mocks\ngAnimateMock.js" />
